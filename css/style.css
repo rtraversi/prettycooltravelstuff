@@ -183,17 +183,66 @@ a:hover { text-decoration: underline; }
   max-width: 480px;
 }
 
+.hero-logo {
+  width: 240px;
+  height: auto;
+  filter: drop-shadow(0 8px 24px rgba(0,0,0,.35));
+  margin-bottom: 16px;
+}
+
 .hero-badge {
   background: rgba(255,255,255,.12);
   border: 1px solid rgba(255,255,255,.2);
   backdrop-filter: blur(8px);
   border-radius: var(--radius);
-  padding: 24px 32px;
-  font-size: 1.1rem;
+  padding: 14px 24px;
+  font-size: 1rem;
   font-weight: 600;
   color: rgba(255,255,255,.9);
   white-space: nowrap;
+  text-align: center;
 }
+
+/* ── Partner Section ───────────────────────────────────────── */
+.partner-section {
+  background: var(--teal-light);
+  padding: 56px 0;
+  border-top: 1px solid rgba(13,148,136,.15);
+  border-bottom: 1px solid rgba(13,148,136,.15);
+}
+
+.partner-inner { max-width: 720px; }
+
+.partner-label {
+  font-size: .8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+  color: var(--teal-dark);
+  margin-bottom: 8px;
+}
+
+.partner-text h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 12px;
+  letter-spacing: -.02em;
+}
+
+.partner-text p {
+  color: var(--gray-700);
+  font-size: .95rem;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.partner-link {
+  font-weight: 600;
+  color: var(--teal-dark);
+  font-size: .95rem;
+}
+.partner-link:hover { color: var(--navy); }
 
 /* ── Products ──────────────────────────────────────────────── */
 .products-section {
