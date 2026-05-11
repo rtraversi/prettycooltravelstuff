@@ -8,7 +8,7 @@ if ([string]::IsNullOrWhiteSpace($commitMsg)) {
 
 git add .
 git commit -m $commitMsg
-git push
+git push -u origin HEAD
 
 Write-Host ""
 Write-Host "Done! Changes pushed to GitHub." -ForegroundColor Green
