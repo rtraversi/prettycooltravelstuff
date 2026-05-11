@@ -4,7 +4,8 @@
       "PowerShell(New-Item -ItemType Directory -Path \"C:\\\\sites\\\\prettycooltravelstuff\\\\css\" -Force)",
       "PowerShell(New-Item -ItemType Directory -Path \"C:\\\\sites\\\\prettycooltravelstuff\\\\images\" -Force)",
       "mcp__1ae683a2-31d8-473d-81a3-bee358a90d5c__netlify-project-services-reader",
-      "WebFetch(domain:www.lakesidespecimports.com)"
+      "WebFetch(domain:www.lakesidespecimports.com)",
+      "PowerShell(Invoke-WebRequest -Uri \"https://www.lakesidespecimports.com/cdn/shop/files/165.png\" -OutFile \"C:\\\\sites\\\\prettycooltravelstuff\\\\.claude\\\\worktrees\\\\dazzling-rosalind-05435e\\\\images\\\\pet-grooming-gloves.jpg\")"
     ]
   }
 }
