@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pretty Cool Travel Stuff – Travel Accessories You'll Actually Use</title>
+  <meta name="description" content="Practical, affordable travel accessories for cruisers and road warriors. Luggage tag holders, packing essentials, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <img src="pctslogo.png" alt="Pretty Cool Travel Stuff" class="logo-img" />
+      </a>
+      <nav class="header-nav">
+        <a href="#products">Shop</a>
+        <a href="#about">About</a>
+        <button class="snipcart-checkout cart-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          Cart
+          <span class="snipcart-items-count"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Travel smarter.<br>Pack better.</h1>
+        <p>Practical accessories for cruisers, road warriors, and anyone who'd rather spend time exploring than stressing at the baggage carousel.</p>
+        <a href="#products" class="btn btn-primary">Shop Now</a>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-badge">✈ Free shipping over $35</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <h2 class="section-title">Travel Essentials</h2>
+      <p class="section-subtitle">Stuff that actually makes your trip easier.</p>
+
+      <div class="product-grid">
+
+        <!-- Product: Clear Luggage Tag Holders -->
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="images/luggage-tag-holders.jpg" alt="Clear plastic cruise luggage tag holders" onerror="this.parentElement.classList.add('img-placeholder')" />
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Clear Cruise Luggage Tag Holders</h3>
+            <p class="product-desc">Protect your cruise ship luggage tags with these durable clear plastic holders. Keep your cabin number visible so porters deliver your bags to the right room — every time.</p>
+            <ul class="product-features">
+              <li>Fits all standard cruise line luggage tags</li>
+              <li>Heavy-duty clear PVC, waterproof</li>
+              <li>Includes steel cable ties — no zip ties to fumble with</li>
+              <li>Pack of 4</li>
+            </ul>
+            <div class="product-footer">
+              <span class="product-price">$12.99</span>
+              <button
+                class="snipcart-add-item btn btn-buy"
+                data-item-id="clear-luggage-tag-holders-4pk"
+                data-item-name="Clear Cruise Luggage Tag Holders (4-Pack)"
+                data-item-price="12.99"
+                data-item-url="/"
+                data-item-description="Durable clear PVC luggage tag holders for cruise ships. Pack of 4 with steel cable ties."
+                data-item-image="images/luggage-tag-holders.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Placeholder product slot 2 — add more here -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about-section" id="about">
+    <div class="container about-inner">
+      <div class="about-text">
+        <h2>Why Pretty Cool Travel Stuff?</h2>
+        <p>We're travelers ourselves. We got tired of overpriced airport shops and Amazon listings with no real info. So we curated a small collection of travel accessories that we actually use — priced fairly, described honestly.</p>
+        <p>Every item ships from the US. Questions? Email us at <a href="mailto:hello@prettycooltravelstuff.com">hello@prettycooltravelstuff.com</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="pctslogo.png" alt="Pretty Cool Travel Stuff" class="footer-logo-img" />
+      <p class="footer-address">Garner, NC</p>
+      <nav class="footer-nav">
+        <a href="#">Shipping Policy</a>
+        <a href="#">Returns</a>
+        <a href="#">Privacy Policy</a>
+        <a href="mailto:hello@prettycooltravelstuff.com">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Pretty Cool Travel Stuff. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Snipcart -->
+  <script>
+    window.SnipcartSettings = {
+        publicApiKey: 'MTNmOTM5N2EtNDdlZi00NWFhLWI3ZDctMGYzZjNlNDVjYTA1NjM5MTQxMTMxNDYyNTAxNTQw', // TODO: replace with LIVE key before going live (Snipcart dashboard → Account → API Keys)
+        loadStrategy: 'on-user-interaction',
+    };
+    (()=>{var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var f=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,m=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(m.forEach(t=>document.addEventListener(t,o)),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],e=document.querySelector("#snipcart"),i=document.querySelector(`src[src^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][src$="snipcart.js"]`),n=document.querySelector(`link[href^="${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}"][href$="snipcart.css"]`);e||(e=document.createElement("div"),e.id="snipcart",e.setAttribute("hidden","true"),document.body.appendChild(e)),v(e),i||(i=document.createElement("script"),i.src=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.js`,i.async=!0,t.appendChild(i)),n||(n=document.createElement("link"),n.rel="stylesheet",n.type="text/css",n.href=`${window.SnipcartSettings.protocol}://${window.SnipcartSettings.domain}/themes/v${window.SnipcartSettings.version}/default/snipcart.css`,t.prepend(n)),m.forEach(g=>document.removeEventListener(g,o))}function v(t){!f||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+  </script>
+
+</body>
+</html>
